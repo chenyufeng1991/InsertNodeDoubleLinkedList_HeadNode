@@ -104,7 +104,7 @@ int InsertNodeList(Node *pHead,Node *pTail,int pos,int x){
     pMove = pHead;
     while (pMove != pTail) {
         if (i == pos) {
-
+            //注意这里的链接顺序
             pMove->next->prior = pInsert;
             pInsert->next = pMove->next;
             pMove->next = pInsert;
